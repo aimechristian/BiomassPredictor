@@ -108,7 +108,7 @@ class StreamlitApp:
             f'<p class="font-style" >Prediction (tons/ha)</p>',
             unsafe_allow_html=True
         )
-        column_1.write(f"{prediction} (+/- 2)")
+        column_1.write(f"{prediction} ")
 
         column_2.markdown(
             '<p class="font-style" >Biomass Rank </p>',
