@@ -101,7 +101,9 @@ class StreamlitApp:
             unsafe_allow_html=True
         )
         st.markdown(
-            '<p class="header-style"> Biomass Prediction </p>',
+            '<p class="header-style"> SEABEM (Stacked Ensemble Algorithms Biomass Estimator Model), is a free and open-sourced web application that enables\ 
+            Sub-Saharan African farmers to predict yield before planting,\ 
+            hence making better data-based operating decisions and becoming more profitable. </p>',
             unsafe_allow_html=True
         )
 
