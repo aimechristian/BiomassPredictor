@@ -127,8 +127,8 @@ class StreamlitApp:
             components.html("""
             <script>
             const elements = window.parent.document.querySelectorAll('.stButton > button')
-            elements[0].style.backgroundColor = #F63C24
-            elements[1].style.backgroundColor = #F63C24
+            elements[0].style.backgroundColor = 'lightgreen'
+            elements[1].style.backgroundColor = 'lightgreen'
             </script>
             """,
                 height=0,
@@ -141,8 +141,8 @@ class StreamlitApp:
             components.html("""
             <script>
             const elements = window.parent.document.querySelectorAll('.stButton > button')
-            elements[0].style.backgroundColor = #f46b92
-            elements[1].style.backgroundColor = #f46b92
+            elements[0].style.backgroundColor = 'lightcoral'
+            elements[1].style.backgroundColor = 'lightcoral'
             </script>
             """,
                 height=0,
@@ -155,8 +155,8 @@ class StreamlitApp:
             components.html("""
             <script>
             const elements = window.parent.document.querySelectorAll('.stButton > button')
-            elements[0].style.backgroundColor = 'aegean'
-            elements[1].style.backgroundColor = 'aegean'
+            elements[0].style.backgroundColor = 'lightblue'
+            elements[1].style.backgroundColor = 'lightblue'
             </script>
             """,
                 height=0,
