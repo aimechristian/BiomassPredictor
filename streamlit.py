@@ -107,16 +107,23 @@ class StreamlitApp:
 
         column_1, column_2 = st.columns(2)
         column_1.markdown(
-            f'<p class="font-style" >Prediction (tons/ha)</p>',
+            f'<p class="header-style" >Prediction (tons/ha)</p>',
             unsafe_allow_html=True
         )
         column_1.write(f"{prediction} ")
 
         column_2.markdown(
-            '<p class="font-style" >Biomass Rank </p>',
+            '<p class="header-style" >Biomass Rank </p>',
             unsafe_allow_html=True
         )
-        column_2.write(f"To be added")
+        if prediction > 4:
+            column_2.write(f"Very Good")
+            
+        elif prediction <2:
+            column_2.write(f"Bad")
+            
+        else:
+            column_2.write(f"Good")
 
         return self
 
