@@ -113,17 +113,6 @@ class StreamlitApp:
         )
         column_1.write(f"{prediction} ")
         
-        column_1.markdown(
-            """
-            <style>
-            .font-style {
-                font-size:40px;
-                font-family:sans-serif;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
 
         column_2.markdown(
             '<p class="header-style" >Biomass Rank </p>',
@@ -138,17 +127,6 @@ class StreamlitApp:
         else:
             column_2.write(f"Good")
         
-        column_2.markdown(
-            """
-            <style>
-            .font-style {
-                font-size:40px;
-                font-family:sans-serif;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
         
         st.markdown(
             '<p class="font-style" >Created by: Aime Christian Tuyishime</p>',
