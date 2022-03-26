@@ -31,7 +31,7 @@ class StreamlitApp:
         cols = [col for col in features.columns]
 
         st.sidebar.markdown(
-            '<p class="header-style">Biomass Prediction Variables</p>',
+            '<p class="header-style">Please input data</p>',
             unsafe_allow_html=True
         )
         Site_Latitude = st.sidebar.number_input(
