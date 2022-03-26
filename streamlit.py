@@ -125,7 +125,17 @@ class StreamlitApp:
             
         else:
             column_2.write(f"Good")
-
+            
+        st.markdown(
+            '<p class="header-style" >Created by Aime Christian Tuyishime</p>',
+            unsafe_allow_html=True
+        )
+        
+        st.markdown(
+            '<p class="header-style" >Contact - Email: tuyishimeaimechristian@gmail.com</p>',
+            unsafe_allow_html=True
+        )
+        
         return self
 
 
