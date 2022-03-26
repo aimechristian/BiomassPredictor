@@ -74,6 +74,8 @@ class StreamlitApp:
         values_to_predict = np.array(values).reshape(1, -1)
 
         prediction = self.model.predict(values_to_predict)
+        
+        st.title("SEABEM")
 
         st.markdown(
             """
