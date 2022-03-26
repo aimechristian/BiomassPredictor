@@ -11,7 +11,6 @@ data = pd.read_csv('Final_Dataset.csv')
 #Feature-Label Split
 features = data.loc[:, data.columns != 'Crop_Biomass_Aerial']
 target = data.loc[:, data.columns == 'Crop_Biomass_Aerial']
-introduction = "SEABEM (Stacked Ensemble Algorithms Biomass Estimator Model), is a free and open-sourced web application that enables Sub-Saharan African farmers to predict yield before planting, hence making better data-based operating decisions and becoming more profitable."
 
 #Train-Test Split
 x_train, x_test, y_train, y_test = train_test_split(features,target,test_size=0.25,random_state=20)
@@ -105,7 +104,7 @@ class StreamlitApp:
         
         
         st.markdown(
-            '<p class="header-style"> introduction </p>',
+            '<p class="header-style"> SEABEM (Stacked Ensemble Algorithms Biomass Estimator Model), is a free and open-sourced web application that enables Sub-Saharan African farmers to predict yield before planting, hence making better data-based operating decisions and becoming more profitable </p>',
             unsafe_allow_html=True
         )
 
