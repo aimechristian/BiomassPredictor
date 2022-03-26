@@ -115,7 +115,7 @@ class StreamlitApp:
             f'<p class="header-style" >Prediction (tons/ha)</p>',
             unsafe_allow_html=True
         )
-        column_1.write(f"{prediction}")
+        column_1.button(f"{prediction}")
         
 
         column_2.markdown(
@@ -123,13 +123,13 @@ class StreamlitApp:
             unsafe_allow_html=True
         )
         if prediction > 4:
-            column_2.write(f"Very Good")
+            column_2.button(f"Very Good")
             
         elif prediction <2:
-            column_2.write(f"Bad")
+            column_2.button(f"Bad")
             
         else:
-            column_2.write(f"Good")
+            column_2.button(f"Good")
         
         
         st.markdown(
