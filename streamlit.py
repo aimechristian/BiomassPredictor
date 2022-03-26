@@ -5,8 +5,7 @@ import streamlit as st
 from sklearn import ensemble, tree
 from sklearn.model_selection import train_test_split
 import math
-v = 2.357
-print(math.ceil(v*100)/100)  # -> 2.36
+import streamlit.components.v1 as components
 
 
 data = pd.read_csv('Final_Dataset.csv')
@@ -125,11 +124,41 @@ class StreamlitApp:
         if prediction > 4:
             column_2.button(f"Very Good")
             
+            components.html("""
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton > button')
+            elements[1].style.backgroundColor = 'lightgreen'
+            </script>
+            """,
+                height=0,
+                width=0
+            )
+            
         elif prediction <2:
             column_2.button(f"Bad")
             
+            components.html("""
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton > button')
+            elements[1].style.backgroundColor = 'lightcoral'
+            </script>
+            """,
+                height=0,
+                width=0
+            )
+            
         else:
             column_2.button(f"Good")
+            
+            components.html("""
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton > button')
+            elements[1].style.backgroundColor = 'lightblue'
+            </script>
+            """,
+                height=0,
+                width=0
+            )
         
         
         st.markdown(
@@ -141,6 +170,17 @@ class StreamlitApp:
             '<p class="font-style" >Contact - Email: tuyishimeaimechristian@gmail.com</p>',
             unsafe_allow_html=True
         )
+        
+        components.html("""
+        <script>
+        const elements = window.parent.document.querySelectorAll('.stButton > button')
+        elements[1].style.backgroundColor = 'lightcoral'
+        </script>
+        """,
+            height=0,
+            width=0
+        )
+            
         
         return self
 
