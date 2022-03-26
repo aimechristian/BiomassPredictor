@@ -111,7 +111,7 @@ class StreamlitApp:
             f'<p class="header-style" >Prediction (tons/ha)</p>',
             unsafe_allow_html=True
         )
-        column_1.write(f"{prediction} ")
+        column_1.write(f"{str(round(prediction, 2))} ")
         
 
         column_2.markdown(
