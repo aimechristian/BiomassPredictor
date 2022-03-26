@@ -127,7 +127,8 @@ class StreamlitApp:
             components.html("""
             <script>
             const elements = window.parent.document.querySelectorAll('.stButton > button')
-            elements[1].style.backgroundColor = 'lightgreen'
+            elements[0].style.backgroundColor = 'darkgreen'
+            elements[1].style.backgroundColor = 'darkgreen'
             </script>
             """,
                 height=0,
@@ -140,7 +141,8 @@ class StreamlitApp:
             components.html("""
             <script>
             const elements = window.parent.document.querySelectorAll('.stButton > button')
-            elements[1].style.backgroundColor = 'lightcoral'
+            elements[0].style.backgroundColor = 'darkcoral'
+            elements[1].style.backgroundColor = 'darkcoral'
             </script>
             """,
                 height=0,
@@ -153,7 +155,8 @@ class StreamlitApp:
             components.html("""
             <script>
             const elements = window.parent.document.querySelectorAll('.stButton > button')
-            elements[1].style.backgroundColor = 'lightblue'
+            elements[0].style.backgroundColor = 'darkblue'
+            elements[1].style.backgroundColor = 'darkblue'
             </script>
             """,
                 height=0,
@@ -169,16 +172,6 @@ class StreamlitApp:
         st.markdown(
             '<p class="font-style" >Contact - Email: tuyishimeaimechristian@gmail.com</p>',
             unsafe_allow_html=True
-        )
-        
-        components.html("""
-        <script>
-        const elements = window.parent.document.querySelectorAll('.stButton > button')
-        elements[1].style.backgroundColor = 'lightcoral'
-        </script>
-        """,
-            height=0,
-            width=0
         )
             
         
