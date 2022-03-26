@@ -4,6 +4,9 @@ import streamlit as st
 #import plotly.graph_objects as go
 from sklearn import ensemble, tree
 from sklearn.model_selection import train_test_split
+import math
+v = 2.357
+print(math.ceil(v*100)/100)  # -> 2.36
 
 
 data = pd.read_csv('Final_Dataset.csv')
@@ -74,6 +77,7 @@ class StreamlitApp:
         values_to_predict = np.array(values).reshape(1, -1)
 
         prediction = self.model.predict(values_to_predict)
+        prediction = math.ceil(prediction*100)/100  
         
         st.title("SEABEM")
         
@@ -111,7 +115,7 @@ class StreamlitApp:
             f'<p class="header-style" >Prediction (tons/ha)</p>',
             unsafe_allow_html=True
         )
-        column_1.write(f"{prediction:.2f} ")
+        column_1.write(f"{prediction}")
         
 
         column_2.markdown(
